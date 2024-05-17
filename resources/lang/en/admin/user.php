@@ -2,10 +2,10 @@
 
 return [
     'exceptions' => [
-        'user_has_servers' => 'Cannot delete a user with active servers attached to their account. Please delete their servers before continuing.',
+        'user_has_servers' => 'Käyttäjää, jolla on aktiivisia palvelimia tilillään, ei voida poistaa. Poista heidän palvelimensa ennen jatkamista.',
     ],
     'notices' => [
-        'account_created' => 'Account has been created successfully.',
-        'account_updated' => 'Account has been successfully updated.',
+        'account_created' => 'Tili on luotu onnistuneesti.',
+        'account_updated' => 'Tili on päivitetty onnistuneesti.',
     ],
 ];

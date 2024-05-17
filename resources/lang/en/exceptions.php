@@ -1,59 +1,59 @@
 <?php
 
 return [
-    'daemon_connection_failed' => 'There was an exception while attempting to communicate with the daemon resulting in a HTTP/:code response code. This exception has been logged.',
+    'daemon_connection_failed' => 'Yhteyden yrittämisessä daemonin kanssa tapahtui poikkeus, joka johti HTTP/:code vastauskoodiin. Tämä poikkeus on kirjattu.',
     'node' => [
-        'servers_attached' => 'A node must have no servers linked to it in order to be deleted.',
-        'daemon_off_config_updated' => 'The daemon configuration <strong>has been updated</strong>, however there was an error encountered while attempting to automatically update the configuration file on the Daemon. You will need to manually update the configuration file (config.yml) for the daemon to apply these changes.',
+        'servers_attached' => 'Solmulla ei saa olla siihen liitettyjä palvelimia, jotta se voidaan poistaa.',
+        'daemon_off_config_updated' => 'Daemonin konfiguraatio <strong>on päivitetty</strong>, mutta konfiguraatiotiedoston automaattisessa päivityksessä daemonille tapahtui virhe. Sinun on päivitettävä konfiguraatiotiedosto (config.yml) manuaalisesti, jotta muutokset tulevat voimaan.',
     ],
     'allocations' => [
-        'server_using' => 'A server is currently assigned to this allocation. An allocation can only be deleted if no server is currently assigned.',
-        'too_many_ports' => 'Adding more than 1000 ports in a single range at once is not supported.',
-        'invalid_mapping' => 'The mapping provided for :port was invalid and could not be processed.',
-        'cidr_out_of_range' => 'CIDR notation only allows masks between /25 and /32.',
-        'port_out_of_range' => 'Ports in an allocation must be greater than 1024 and less than or equal to 65535.',
+        'server_using' => 'Palvelin on tällä hetkellä osoitettu tälle allokaatiolle. Allokaation voi poistaa vain, jos siihen ei ole tällä hetkellä osoitettu palvelinta.',
+        'too_many_ports' => 'Yli 1000 portin lisääminen kerralla yhteen alueeseen ei ole tuettu.',
+        'invalid_mapping' => 'Annettu mapping :port oli virheellinen eikä sitä voitu käsitellä.',
+        'cidr_out_of_range' => 'CIDR-notaatio sallii vain maskit välillä /25 ja /32.',
+        'port_out_of_range' => 'Allokaation porttien on oltava suurempia kuin 1024 ja enintään 65535.',
     ],
     'nest' => [
-        'delete_has_servers' => 'A Nest with active servers attached to it cannot be deleted from the Panel.',
+        'delete_has_servers' => 'Pesää, johon on liitetty aktiivisia palvelimia, ei voi poistaa paneelista.',
         'egg' => [
-            'delete_has_servers' => 'An Egg with active servers attached to it cannot be deleted from the Panel.',
-            'invalid_copy_id' => 'The Egg selected for copying a script from either does not exist, or is copying a script itself.',
-            'must_be_child' => 'The "Copy Settings From" directive for this Egg must be a child option for the selected Nest.',
-            'has_children' => 'This Egg is a parent to one or more other Eggs. Please delete those Eggs before deleting this Egg.',
+            'delete_has_servers' => 'Munaa, johon on liitetty aktiivisia palvelimia, ei voi poistaa paneelista.',
+            'invalid_copy_id' => 'Valittua munaa, josta kopioidaan skripti, ei ole olemassa tai se kopioi itse skriptiä.',
+            'must_be_child' => 'Tämän munan "Kopioi asetukset" -direktiivin on oltava valitun pesän lapsi.',
+            'has_children' => 'Tämä muna on yhden tai useamman muun munan vanhempi. Poista nämä munat ennen tämän munan poistamista.',
         ],
         'variables' => [
-            'env_not_unique' => 'The environment variable :name must be unique to this Egg.',
-            'reserved_name' => 'The environment variable :name is protected and cannot be assigned to a variable.',
-            'bad_validation_rule' => 'The validation rule ":rule" is not a valid rule for this application.',
+            'env_not_unique' => 'Ympäristömuuttujan :name on oltava ainutlaatuinen tälle munalle.',
+            'reserved_name' => 'Ympäristömuuttuja :name on suojattu, eikä sitä voi määrittää muuttujalle.',
+            'bad_validation_rule' => 'Validointisääntö ":rule" ei ole kelvollinen sääntö tälle sovellukselle.',
         ],
         'importer' => [
-            'json_error' => 'There was an error while attempting to parse the JSON file: :error.',
-            'file_error' => 'The JSON file provided was not valid.',
-            'invalid_json_provided' => 'The JSON file provided is not in a format that can be recognized.',
+            'json_error' => 'JSON-tiedoston jäsentämisessä tapahtui virhe: :error.',
+            'file_error' => 'Annettu JSON-tiedosto ei ollut kelvollinen.',
+            'invalid_json_provided' => 'Annettu JSON-tiedosto ei ole tunnistettavassa muodossa.',
         ],
     ],
     'subusers' => [
-        'editing_self' => 'Editing your own subuser account is not permitted.',
-        'user_is_owner' => 'You cannot add the server owner as a subuser for this server.',
-        'subuser_exists' => 'A user with that email address is already assigned as a subuser for this server.',
+        'editing_self' => 'Oman alikäyttäjätilin muokkaaminen ei ole sallittua.',
+        'user_is_owner' => 'Et voi lisätä palvelimen omistajaa alikäyttäjäksi tälle palvelimelle.',
+        'subuser_exists' => 'Käyttäjä, jolla on tämä sähköpostiosoite, on jo määritetty alikäyttäjäksi tälle palvelimelle.',
     ],
     'databases' => [
-        'delete_has_databases' => 'Cannot delete a database host server that has active databases linked to it.',
+        'delete_has_databases' => 'Tietokantapalvelinta, jolla on aktiivisia tietokantoja, ei voi poistaa.',
     ],
     'tasks' => [
-        'chain_interval_too_long' => 'The maximum interval time for a chained task is 15 minutes.',
+        'chain_interval_too_long' => 'Maksimiaika ketjutetulle tehtävälle on 15 minuuttia.',
     ],
     'locations' => [
-        'has_nodes' => 'Cannot delete a location that has active nodes attached to it.',
+        'has_nodes' => 'Sijaintia, johon on liitetty aktiivisia solmuja, ei voi poistaa.',
     ],
     'users' => [
-        'node_revocation_failed' => 'Failed to revoke keys on <a href=":link">Node #:node</a>. :error',
+        'node_revocation_failed' => 'Avainperuutus epäonnistui <a href=":link">Solmulla #:node</a>. :error',
     ],
     'deployment' => [
-        'no_viable_nodes' => 'No nodes satisfying the requirements specified for automatic deployment could be found.',
-        'no_viable_allocations' => 'No allocations satisfying the requirements for automatic deployment were found.',
+        'no_viable_nodes' => 'Vaadittuja ehtoja täyttäviä solmuja automaattiselle käyttöönotolle ei löytynyt.',
+        'no_viable_allocations' => 'Vaadittuja ehtoja täyttäviä allokaatioita automaattiselle käyttöönotolle ei löytynyt.',
     ],
     'api' => [
-        'resource_not_found' => 'The requested resource does not exist on this server.',
+        'resource_not_found' => 'Pyydettyä resurssia ei löydy tältä palvelimelta.',
     ],
 ];
